@@ -1,0 +1,237 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2529771100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open browser",
+            "match": {
+              "location": "StepDef.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1461603900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to para bank application",
+            "match": {
+              "location": "StepDef.go_to_para_bank_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-02T02:04:51.164Z",
+        "line": 9,
+        "name": "as a para bank user login should success with valid credential",
+        "description": "",
+        "id": "login-function-test;as-a-para-bank-user-login-should-success-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 152827900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "put valid user name",
+            "match": {
+              "location": "StepDef.put_valid_user_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194491600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "put valid password",
+            "match": {
+              "location": "StepDef.put_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 628504300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click login button",
+            "match": {
+              "location": "StepDef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Log out\u0027]\"}\n  (Session info: chrome\u003d130.0.6723.70)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.25.0\u0027, revision: \u00278a8aea2337\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002723\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b621504720d1d9bf67323f9131ab1487, findElement {using\u003dxpath, value\u003d//*[text()\u003d\u0027Log out\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\\Users\\sadit\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59127/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b621504720d1d9bf67323f9131ab1487\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)\r\n\tat com.generic.StepDef.login_should_pass_and_logout_button_should_visible(StepDef.java:51)\r\n\tat ✽.login should pass and logout button should visible(file:src/main/resources/ParaBankLogin.feature:14)\r\n",
+              "duration": 166429800,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "login should pass and logout button should visible",
+            "match": {
+              "location": "StepDef.login_should_pass_and_logout_button_should_visible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@positive"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1910030200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open browser",
+            "match": {
+              "location": "StepDef.open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1093496800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Go to para bank application",
+            "match": {
+              "location": "StepDef.go_to_para_bank_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-02T02:04:56.317Z",
+        "line": 17,
+        "name": "as a para bank user login should fail with invalid credential",
+        "description": "",
+        "id": "login-function-test;as-a-para-bank-user-login-should-fail-with-invalid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 220861400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "put invalid user name",
+            "match": {
+              "location": "StepDef.put_invalid_user_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160771500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "put invalid password",
+            "match": {
+              "location": "StepDef.put_invalid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 496326300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click login button",
+            "match": {
+              "location": "StepDef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258170100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "login should fail and an error message contains An internal error has occurred and has been logged.",
+            "match": {
+              "location": "StepDef.login_should_fail_and_an_error_message_contains_An_internal_error_has_occurred_and_has_been_logged()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      }
+    ],
+    "name": "login function test",
+    "description": "",
+    "id": "login-function-test",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/ParaBankLogin.feature",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 2
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 9
+        }
+      }
+    ]
+  }
+]
